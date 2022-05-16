@@ -1,5 +1,6 @@
 <?php
 
-    echo $_GET["user_id"];
-
+    header('Location: http://localhost/work/tw/birthday.php');
+    exit;
+    
 ?>
