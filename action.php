@@ -6,7 +6,7 @@
 	// パラメータ (オプション)
 	$params = array(
 
-		"usernames" => "htpp_piyo",
+		"usernames" => $_GET["user_id"],
 
 	) ;
 
@@ -57,7 +57,9 @@ $request_url = 'https://api.twitter.com/2/users/'.$id.'/following';
 	$header = substr( $res1, 0, $res2['header_size'] ) ;		// レスポンスヘッダー (検証に利用したい場合にどうぞ)
  $array = json_decode($json,true);
 
- var_dump($json);
+ for($i=0;$i<99;$i++){
+  echo "@".$array['data'][$i]["username"]."<br>";
+}
 
 
 
