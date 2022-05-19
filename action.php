@@ -1,6 +1,6 @@
 <?php
 	$usere_name= array();
-	$bearer_token = 'AAAAAAAAAAAAAAAAAAAAACWhcgEAAAAAruXZ6Oyq7ty1Rugb7MCg0KWxmz4%3DsIhRUvr9cplAWJGmTitDQirdakJ6bN7VXIeO42G99AnIGjCXD9' ;	// ベアラートークン
+	$bearer_token = '' ;	// ベアラートークン
 	$request_url = 'https://api.twitter.com/2/users/by' ;		// エンドポイント
 
 	$params = array("usernames" => $_GET["user_id"],) ;
